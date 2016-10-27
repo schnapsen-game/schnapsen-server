@@ -20,7 +20,7 @@ lazy val projectSettings = Seq(
     "-explaintypes",
     "-uniqid",
     "-Xfuture",
-    "-Xfatal-warnings",
+    //"-Xfatal-warnings",
     //    "-Xprompt", //for debugging
      "-Xstrict-inference",
     "-Yno-adapted-args",
@@ -52,10 +52,10 @@ lazy val tableCreate = (
     settings(libraryDependencies ++= commonDependencies)
 )
 
-// lazy val table-query = (
-//   baseProject("table-query")
-//     settings(libraryDependencies ++= commonDependencies)
-//   )
+lazy val tableQuery = (
+  baseProject("table-query")
+    settings(libraryDependencies ++= commonDependencies)
+  )
 
 // lazy val table-join = (
 //   baseProject("table-join")
